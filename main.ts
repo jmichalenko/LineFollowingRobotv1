@@ -17,7 +17,7 @@ basic.forever(function () {
     } else {
         LED1.showColor(neopixel.colors(NeoPixelColors.White))
         LED2.showColor(neopixel.colors(NeoPixelColors.White))
-        wuKong.setAllMotor(40, -40)
+        wuKong.setAllMotor(40, 40)
     }
     if (pins.digitalReadPin(DigitalPin.P1) == 0) {
         LED0.showColor(neopixel.colors(NeoPixelColors.Yellow))
@@ -26,6 +26,6 @@ basic.forever(function () {
     } else {
         LED0.showColor(neopixel.colors(NeoPixelColors.White))
         LED3.showColor(neopixel.colors(NeoPixelColors.White))
-        wuKong.setAllMotor(40, -40)
+        wuKong.setAllMotor(40, 40)
     }
 })
